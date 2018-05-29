@@ -1,0 +1,16 @@
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: webapp-ingress
+  annotations:
+    kubernetes.io/ingress.class: nginx
+spec:
+  rules:
+  - host: app.unipig.de
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: webapp-svc 
+          servicePort: http
