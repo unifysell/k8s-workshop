@@ -6,7 +6,7 @@ metadata:
   labels:
     app: mysql
 spec:
-  storageClassName: generic 
+  storageClassName: sys11-quobyte
   accessModes:
   - ReadWriteOnce
   resources:
