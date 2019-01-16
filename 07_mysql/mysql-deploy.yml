@@ -2,7 +2,7 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: mysql-app 
+  name: mysql-app
   labels:
     app: mysql
 spec:
@@ -14,14 +14,14 @@ spec:
         app: mysql
     spec:
       containers:
-      - image: percona 
+      - image: percona
         name: mysql
         args:
           - "--ignore-db-dir=lost+found"
         env:
         - name: MYSQL_ROOT_PASSWORD
           value: "changeme"
-        - name: MYSQL_DATABASE 
+        - name: MYSQL_DATABASE
           value: "syseleven"
         - name: MYSQL_USER
           value: "shopware"

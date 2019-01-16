@@ -25,7 +25,7 @@ spec:
     requests:
       storage: 20Gi
 ---
-apiVersion: apps/v1 
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: wordpress-mysql
@@ -53,7 +53,7 @@ spec:
             memory: 512Mi
           requests:
             cpu: 100m
-            memory: 256Mi    
+            memory: 256Mi
         env:
         - name: MYSQL_ROOT_PASSWORD
           valueFrom:

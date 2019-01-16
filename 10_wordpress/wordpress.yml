@@ -25,7 +25,7 @@ spec:
     requests:
       storage: 20Gi
 ---
-apiVersion: apps/v1 
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: wordpress
@@ -71,14 +71,14 @@ spec:
           initialDelaySeconds: 30
           periodSeconds: 10
           failureThreshold: 3
-          timeoutSeconds: 1              
+          timeoutSeconds: 1
         readinessProbe:
-          tcpSocket: 
+          tcpSocket:
             port: 80
           initialDelaySeconds: 30
           periodSeconds: 5
           failureThreshold: 3
-          timeoutSeconds: 1              
+          timeoutSeconds: 1
         volumeMounts:
         - name: wordpress-persistent-storage
           mountPath: /var/www/html
