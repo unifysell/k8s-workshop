@@ -4,7 +4,7 @@ apiVersion: storage.k8s.io/v1
 metadata:
   name: generic
   annotations:
-    storageclass.kubernetes.io/is-default-class: "true" 
+    storageclass.kubernetes.io/is-default-class: "true"
 parameters:
   availability: dbl1
   type: quobyte
@@ -15,6 +15,6 @@ apiVersion: storage.k8s.io/v1
 metadata:
   name: standard
 parameters:
-  availability: dbl1 
+  availability: dbl1
   type: quobyte
 provisioner: kubernetes.io/cinder
