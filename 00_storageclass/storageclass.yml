@@ -13,7 +13,7 @@ provisioner: kubernetes.io/cinder
 kind: StorageClass
 apiVersion: storage.k8s.io/v1
 metadata:
-  name: standard
+  name: sys11-quobyte
 parameters:
   availability: dbl1
   type: quobyte
