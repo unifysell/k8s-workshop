@@ -14,7 +14,7 @@ spec:
         app: mysql
     spec:
       containers:
-      - image: percona
+      - image: mysql:5.7
         name: mysql
         args:
           - "--ignore-db-dir=lost+found"
